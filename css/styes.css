@@ -1,56 +1,135 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-main, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/* Basic CSS Reset */
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, main, menu, nav, section {
-    display: block;
-}
-
+/* Body Styling */
 body {
-    line-height: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #10578d;
+    color: #222;
+    line-height: 1.6;
 }
 
-ol, ul {
-    list-style: none;
+/* Example Container */
+.container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-blockquote, q {
-    quotes: none;
+.topnav {
+    overflow: hidden;
+    background-color: #f8f1f1;
+    
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-h1 {
-    color: blue;
+.nav {
+    background-color: blanchedalmond;
+    justify-content: space-evenly;
     text-align: center;
-    margin-top: 20px;
 }
+
+
+.navnav {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+.navnav:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(73, 7, 7, 0.5); 
+}
+
+
+.header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 4vw;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.header2 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    font-style: oblique;
+    font-size: 1.3vw;
+    padding: 4px;
+    background-color: #ffffff;
+}
+
+.about {
+    display: flex;
+    padding: 200px;
+    font-size: 3vh;
+}
+
+.img-container {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img img {   
+    width:20vw;
+}
+
+.img2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 3vw;
+    flex-direction: column;
+}
+
+.img2 img {
+    width: 10vw;
+    height: 15vw;
+    padding-right: 20px;
+}
+
+.imgwrapper {
+  transition: all 0.3s ease-in-out; 
+}
+
+.imgwrapper:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(99, 8, 8, 0.5); 
+}
+
+.text2 { 
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.text {
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-start;
+    padding-left: 16vw;
+}
+
+
+.about {
+    display: inline-block;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
